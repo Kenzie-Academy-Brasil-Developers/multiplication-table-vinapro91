@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multiplication Table</title>
+		<style>
+			.cell {
+				display: inline-block;
+				width: 30px; height: 30px;
+				text-align: right;
+			}
+        	.header {
+				background: lightblue;
+			}
+    	</style>
+	</head>
+
+	<body>
+    	<h1>Multiplication Table</h1>
+    <script>
+      function multiplyTable(n) {
+        let x = []
+        for (let i=0;i<= n; i++){
+        x[i] = [i]
+            for (let j=0; j<=n; j++){
+            let multiplica = j*i
+            x[i][j] = multiplica        
+            }
+        }return x
+    }
+        console.table(multiplyTable(10));
+    	</script>
+	</body>
+</html>
